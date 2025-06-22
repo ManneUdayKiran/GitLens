@@ -1,72 +1,59 @@
+# 🕵️ GitLens Insights Report
 
-# 🔍 GitLens Detective — Find the Author!
-
-This project demonstrates how to use the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension in Visual Studio Code to investigate Git history and identify the author, date, and commit details of specific code functions.
-
----
-## Screenshots
-![image](https://github.com/user-attachments/assets/590b6a50-203b-4668-a8ee-e6a0e8019550)
-![image](https://github.com/user-attachments/assets/bb39a484-0e1f-454e-a454-79c21ee3d4c0)
-
-
-
+This document provides detailed insights obtained using the **GitLens** extension in Visual Studio Code. It includes authorship, commit history, and change tracking for a selected function in the project repository.
 
 ---
+## ScreenShots
+![image](https://github.com/user-attachments/assets/4f7a0c4c-25ea-4561-a839-4176048312e3)
 
-### 1. Install GitLens Extension
 
-In VS Code:
+## 📂 Repository Info
 
-* Go to the Extensions panel (`Ctrl+Shift+X`)
-* Search for **GitLens — Git supercharged**
-* Click **Install**
+**Repository Name:** GitLens (local clone)  
+**Analyzed File:** `tests/test_binary.py`  
+**Analyzed Function:** `test_binary_stdin`
 
 ---
 
-## 🔎 Investigation Steps
+## 👤 Author Details
 
-### 🧠 Identify a Function
-
-Open a source code file and place your cursor on any line within the function you want to inspect.
-
-### 👤 Who Wrote It?
-
-GitLens will display the author and last modified date inline next to the line of code.
-
-### 📜 What Commit Added or Changed It?
-
-* Hover over the inline blame for full details.
-* Click on the line number to open the commit.
-* Use the GitLens sidebar to view file history or line history.
+- **Function Name:** `test_binary_stdin`
+- **Original Author:** Jakub Roztocil
+- **Date Added:** April 24th, 2014 at 6:28 PM
+- **Added In Commit:** `b880e99`  
+  **Commit Message:** `Converted all unittest asserts to plain, pytest-powered asserts`
 
 ---
 
-## ✅ Example Analysis
+## 🔄 Last Modification
 
-* **Function Name:** `calculateTotalPrice`
-* **Author:** John Smith
-* **First Added In:** Commit `a1b2c3d` - "Add pricing logic"
-* **Last Modified:** `2025-06-15 10:32 AM`
-* **Commit Message:** "Fix floating point issue in total price"
-
----
-
-## 📚 Learning Outcome
-
-* Learn how to investigate Git history using GitLens
-* Understand who wrote what and when in a collaborative codebase
-* Gain insights into code evolution and authorship
+- **Last Modified By:** Jakub Roztocil  
+- **Date:** 11 years ago (April 24th, 2014)  
+- **Commit ID:** `b880e99`  
+- **Commit Message:** `Converted all unittest asserts to plain, pytest-powered asserts`
 
 ---
 
-## 🛠️ Tools Used
+## 🔍 How the Data Was Collected
 
-* Visual Studio Code
-* GitLens Extension
-* Git
+- Used **GitLens inline blame annotations** to view who last modified the function `test_binary_stdin`.
+- Hovered over the relevant line to see author, commit ID, and timestamp.
+- Opened the **GitLens sidebar** to view the **File History** and **Line History** of `test_binary.py`.
+- Inspected the exact commit details in the **Inspect: Commit Details** panel.
 
 ---
 
-## 🙌 Acknowledgements
+## 🧠 Summary
 
-Thanks to the open-source community and GitLens for making powerful tools available to developers.
+GitLens provided clear visibility into the origin of the function `test_binary_stdin`.  
+- The function was authored and last modified by **Jakub Roztocil**.
+- The relevant changes were part of a single commit aimed at improving test structure by switching to pytest-style asserts.
+
+This tool proved highly effective for understanding the evolution and ownership of code in a collaborative environment.
+
+---
+
+## 📎 Notes
+
+- GitLens makes it easy to track authorship, even in large legacy codebases.
+- The ability to view both **line history** and **file-level changes** ensures complete traceability of any code section.
