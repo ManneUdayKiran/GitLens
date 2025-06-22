@@ -4,6 +4,14 @@
 This project demonstrates how to use the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension in Visual Studio Code to investigate Git history and identify the author, date, and commit details of specific code functions.
 
 ---
+## Screenshots
+![image](https://github.com/user-attachments/assets/590b6a50-203b-4668-a8ee-e6a0e8019550)
+![image](https://github.com/user-attachments/assets/bb39a484-0e1f-454e-a454-79c21ee3d4c0)
+
+
+
+
+---
 
 ### 1. Install GitLens Extension
 
